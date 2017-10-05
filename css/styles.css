@@ -34,9 +34,13 @@ li.skill img.skill-ico,
 li.skill {
     padding: 0;
 }
-ul.skill-grid,
+
 div.skill-grid{
     margin: 0;
+}
+
+header.doc-title {
+   margin-top: 25px;
 }
 
 @media only screen and (max-width: 767px){
@@ -51,9 +55,6 @@ div.skill-grid{
        border-radius: 15px;
     }
 }
-
-
-
 
 @media only screen and (min-width: 768px){
     header.doc-title {
@@ -137,8 +138,12 @@ header {
 }
 
 header img {
-    border-radius: 40px;
-    float: left
+    border-radius: 50%;
+    float: left;
+    width: 95px;
+    position: absolute;
+    top: -10px;
+    border: 1px solid #ccc;
 }
 
 header p {
@@ -225,6 +230,9 @@ footer ul li.center {
         text-align: right;
         margin-top: 20px;
     }
+    footer ul li.left div {
+        text-align: center
+    }
 }
 
 footer ul {
@@ -236,8 +244,14 @@ footer ul li.right a {
     padding-right: 0.7em;
 }
 
+
+
 footer ul li h2 {
-    margin-top: 25px;
+    margin-top: 20px;
+}
+
+footer ul li h4 {
+    font-size: 12px;
 }
 
 footer ul li.center img {
@@ -251,14 +265,12 @@ footer ul li.center img {
     color: white;
     font-size: 45px;
 }
-
-
-
 @media only screen and (max-width:480px) {
     body {
         font-size: 12px
     }
-    header p {
-        padding-left: 4.5em
-    }
+}
+
+header p {
+    padding-left: 6.5em
 }
