@@ -19,7 +19,7 @@ body {
 
 
 /*Display: flex declaration*/
-div.container, div.skill-grid
+div.container div.row, div.skill-grid
 {display: flex; flex-wrap: wrap;}
 
 div.container {
@@ -117,7 +117,10 @@ img {
 }
 
 body {
-    background: #fff
+    background: #fff;
+    position: relative;
+    padding-bottom: 20rem;
+    min-height: 100vh;
 }
 
 header,
@@ -183,8 +186,73 @@ footer {
 
 footer span {
     float: right;
-    font-style: italic
+   
 }
+
+footer.container-fluid{
+    width: 100%;
+    max-width: 100%;
+    color: white;
+    background-color: #303030;
+    position: absolute;
+    bottom: 0;
+}
+
+
+footer ul li.right,
+footer ul li.center {
+    text-align: center;
+}
+
+@media only screen and (max-width: 767px){
+    footer ul li {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    footer ul li.right a {
+        padding-left: 1.9em;
+        padding-right: 1.9em;
+    }
+    
+
+}
+
+@media only screen and (min-width: 768px){
+    footer ul li.center {
+        text-align: center;
+    }
+    footer ul li.right {
+        text-align: right;
+        margin-top: 20px;
+    }
+}
+
+footer ul {
+    margin: 0;
+}
+
+footer ul li.right a {
+    padding-left: 0.7em;
+    padding-right: 0.7em;
+}
+
+footer ul li h2 {
+    margin-top: 25px;
+}
+
+footer ul li.center img {
+    max-width: 100px;
+    margin: auto;
+    display: block;
+    float: none;
+    border-radius: 50%;
+}
+.fa {
+    color: white;
+    font-size: 45px;
+}
+
+
 
 @media only screen and (max-width:480px) {
     body {
