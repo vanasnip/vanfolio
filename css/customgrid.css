@@ -4,6 +4,12 @@
         width: 20%;/*100%/5*/
     }
 }
+/*custom width*/
+@media only screen and (min-width: 310px) and (max-width: 767px){
+    .col-xsc-3{
+        width: 25%;
+    }
+}
 @media only screen and (min-width: 768px){
     .col-mdc-9{
         width: 11.11%;/*100%/9*/

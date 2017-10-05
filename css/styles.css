@@ -29,6 +29,7 @@ div.container {
 li{
     list-style: none;
 }
+.exp, .pers,
 div.skill-grid,
 li.skill img.skill-ico,
 li.skill {
@@ -49,14 +50,15 @@ header.doc-title {
        border-radius: 15px;
     }
 }
-@media only screen and (min-width: 768px){
-    li.skill img.skill-ico {
-       padding: 4px;
-       border-radius: 15px;
-    }
-}
 
 @media only screen and (min-width: 768px){
+    ul.skill-grid {
+        margin-top: 25px;
+    }
+    li.skill img.skill-ico {
+        padding: 4px;
+        border-radius: 15px;
+     }
     header.doc-title {
         order: -3;
     }
@@ -65,7 +67,10 @@ header.doc-title {
     }
     div.skill-grid{
         order: -1;
-    }    
+    }   
+    li.exp {
+        min-height: 180px;
+    } 
 }
 
 body,
@@ -74,19 +79,20 @@ input,
 select,
 textarea {
     font-family: 'Open Sans', sans-serif;
-    color: #333
+    color: #333;
 }
 
 a {
-    color: #12C
+    color: #c90b0b;
 }
 
 a:visited {
-    color: #61C
+ 
+    outline: none;
 }
 
 a:focus {
-    outline: thin dotted
+    outline: none;
 }
 
 a:hover,
@@ -161,9 +167,19 @@ header p span {
     padding: 2em;
     background-color: #f8f8f8;
     font-size: 1.2em;
+    border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
-    border-top: 1px solid #ccc
 }
+
+
+
+@media only screen and (min-width: 630px){
+    .hero {        
+        border-radius: 10px;
+        border: 1px solid #ccc;
+    }
+}
+
 
 .content {
     padding: 1em 1em
@@ -172,6 +188,15 @@ header p span {
 .content li {
     list-style-type: none;
     font-size: 1.1em
+}
+
+.content li.exp h2,
+.content li.pers h2 {
+    color: #727EA0;
+}
+
+.content li span.year {
+    font-weight: 700;
 }
 
 li img {
@@ -274,3 +299,6 @@ footer ul li.center img {
 header p {
     padding-left: 6.5em
 }
+
+.grow { transition: all .24s ease-in-out; }
+.grow:hover { transform: scale(1.07); }
